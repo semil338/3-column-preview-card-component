@@ -97,7 +97,8 @@ main {
     outline: 2px solid;
 }
 
-@media screen and (max-width: 375px) {
+
+/* @media screen and (max-width: 375px) {
     body {
         margin: 20px;
         height: 100%;
@@ -120,4 +121,4 @@ main {
         font-size: 0.9rem;
         margin-top: 0;
     }
-}
+} */

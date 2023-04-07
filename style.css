@@ -88,6 +88,13 @@ main {
     font-size: 1rem;
     border-radius: 30px;
     font-family: var(--lexend);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--light-grey);
+    outline: 2px solid;
 }
 
 @media screen and (max-width: 375px) {

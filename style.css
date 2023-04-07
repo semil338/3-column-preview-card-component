@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --big-shoulders: "Big Shoulders Display", cursive;
+    --lexend: "Lexend Deca", sans-serif;
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --darkcyan: hsl(179, 100%, 13%);
+    --light-grey: hsl(0, 0%, 95%);
+    --white: hsla(0, 0%, 100%, 0.75);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-grey);
+    font-family: var(--lexend);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-container {
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 20rem;
+}
+
+.card-orange {
+    background-color: var(--orange);
+}
+
+.card-cyan {
+    background-color: var(--cyan);
+}
+
+.card-dark-cyan {
+    background-color: var(--darkcyan);
+}
+
+.color-orange {
+    color: var(--orange);
+}
+
+.color-cyan {
+    color: var(--cyan);
+}
+
+.color-dark-cyan {
+    color: var(--darkcyan);
+}
+
+.heading {
+    text-transform: uppercase;
+    font-family: var(--big-shoulders);
+    font-size: 2.5rem;
+}
+
+.description {
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.btn {
+    background-color: var(--light-grey);
+    border: none;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+    font-family: var(--lexend);
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        margin: 20px;
+        height: 100%;
+    }
+    main {
+        flex-direction: column;
+        width: 100%;
+    }
+    .card-container {
+        gap: 30px;
+        padding: 40px;
+    }
+    .heading {
+        font-size: 2.2rem;
+    }
+    .description {
+        font-size: 0.95rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+        margin-top: 0;
+    }
+}
